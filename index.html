@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Кофейня "Coffee City Elite</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preload" href="assets/coffee-video.mp4" as="video" type="video/mp4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Coffee City Elite</span>
+                    <span class="logo-dot"></span>
+                </a>
+                
+                <div class="menu-toggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link hover-underline">О нас</a></li>
+                    <li><a href="menu.html" class="nav-link hover-underline">Меню</a></li>
+                    <li><a href="#testimonials" class="nav-link hover-underline">Отзывы</a></li>
+                    <li><a href="#contact" class="nav-link hover-underline">Контакты</a></li>
+                </ul>
+                
+                <div class="social-header">
+                    <a href="https://instagram.com/coffeecity_aktau" target="_blank" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="assets/coffee-video.mp4" type="video/mp4">
+        </video>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    <span class="title-line">Искусство</span>
+                    <span class="title-line">кофейного</span>
+                    <span class="title-line">мастерства</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">Каждая чашка - это история, рассказанная через вкус и аромат</p>
+                <a href="menu.html" class="btn btn-primary" data-aos="fade-up" data-aos-delay="500">
+                    <span>Исследовать меню</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <div class="scroll-downs">
+                <div class="mousey">
+                    <div class="scroller"></div>
+                </div>
+            </div>
+            <span>Листайте вниз</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Знакомство</span>
+                <h2 class="section-title">Наша философия</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <div class="about-text">
+                        <p>Кофейня "Coffee City Elite" - это не просто место, где подают кофе. Это пространство, где рождаются традиции, создаются истории и раскрываются истинные вкусы.</p>
+                        <p>С какогото года мы оттачиваем мастерство приготовления идеального кофе, сочетая современные технологии с вековыми традициями.</p>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="100">0</div>
+                            <div class="stat-label">Лет опыта</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="8">0</div>
+                            <div class="stat-label">Сортов кофе</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="5000">0</div>
+                            <div class="stat-label">Довольных гостей</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-images" data-aos="fade-left">
+                    <div class="image-stack">
+                        <div class="stack-top">
+                            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Кофейные зерна">
+                        </div>
+                        <div class="stack-bottom">
+                            <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="Интерьер кофейни">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Почему мы</span>
+                <h2 class="section-title">Наши преимущества</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3 class="feature-title">Эксклюзивные смеси</h3>
+                    <p class="feature-text">Текст</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="feature-title">Профессиональные бариста</h3>
+                    <p class="feature-text">Наши специалисты проходят обучение у мировых чемпионов по приготовлению кофе.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="feature-title">С заботой о вкусе</h3>
+                    <p class="feature-text">Каждая чашка готовится с вниманием к деталям и любовью к кофейному искусству.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+<section id="testimonials" class="section testimonials">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-subtitle">Мнения</span>
+            <h2 class="section-title">Что говорят гости</h2>
+        </div>
+        
+        <div class="testimonials-container">
+            <div class="testimonial-card" data-aos="fade-up">
+                <div class="testimonial-content">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Отзыв1"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Анна">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Имя</h4>
+                            <p class="author-desc">Гость</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="testimonial-content">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Отзыв"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Дмитрий">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Имя</h4>
+                            <p class="author-desc">Гость</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-content">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"Отзыв"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Елена">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Имя</h4>
+                            <p class="author-desc">Гость</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Instagram Section -->
+    <section class="section instagram">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Социальные сети</span>
+                <h2 class="section-title">Мы в Instagram</h2>
+            </div>
+            
+            <div class="instagram-feed">
+                <div class="instagram-post" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Кофе в Instagram">
+                    <div class="post-overlay">
+                        <a href="https://instagram.com/coffeecity_aktau" target="_blank" class="post-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="instagram-post" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Кофе в Instagram">
+                    <div class="post-overlay">
+                        <a href="https://instagram.com/coffeecity_aktau" target="_blank" class="post-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="instagram-post" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Кофе в Instagram">
+                    <div class="post-overlay">
+                        <a href="https://instagram.com/coffeecity_aktau" target="_blank" class="post-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instagram-cta" data-aos="fade-up">
+                <a href="https://instagram.com/coffeecity_aktau" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-instagram"></i>
+                    <span>Подписаться</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Найти нас</span>
+                <h2 class="section-title">Контакты</h2>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Адрес</h3>
+                            <p class="info-text">17 микрорайон, 6 дом</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Телефон</h3>
+                            <p class="info-text">+7 (777) 411-17-17</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Часы работы</h3>
+                            <p class="info-text">Ежедневно: 8:00 - 24:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://instagram.com/coffeecity_aktau" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+            <div class="contact-map" data-aos="fade-left">
+                <div id="map" style="width:100%; height:100%; border-radius:12px;"></div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">Аромат</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p class="footer-text">Искусство кофейного мастерства с какогото года</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="links-group">
+                        <h3 class="links-title">Навигация</h3>
+                        <ul class="links-list">
+                            <li><a href="#about" class="footer-link hover-underline">О нас</a></li>
+                            <li><a href="menu.html" class="footer-link hover-underline">Меню</a></li>
+                            <li><a href="#testimonials" class="footer-link hover-underline">Отзывы</a></li>
+                            <li><a href="#contact" class="footer-link hover-underline">Контакты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="links-group">
+                        <h3 class="links-title">Контакты</h3>
+                        <ul class="links-list">
+                            <li><a href="tel:+77774111717" class="footer-link hover-underline">+7 (777) 411-17-17</a></li>
+                            <li><a href="https://instagram.com/coffeecity_aktau" target="_blank" class="footer-link hover-underline">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Кофейня "Аромат". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+	<script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
+<script>
+    DG.then(function() {
+        DG.map('map', {
+            center: [43.675613, 51.135616], // Координаты вашей кофейни
+            zoom: 17
+        });
+        
+        DG.marker([43.675613, 51.135616]).addTo(map).bindPopup('Кофейня "Coffee City Elite"');
+    });
+</script>
+</body>
+</html>
